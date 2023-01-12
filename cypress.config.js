@@ -19,6 +19,14 @@ module.exports = defineConfig({
 			const bundler = createBundler({
 				plugins: [createEsbuildPlugin(config)]
 			})
+			on('before:run', async details => {
+				console.log('override before:run')
+				await beforeRunHook(details)
+			})
+			on('after:run', async () => {
+				console.log('override after:run')
+				await afterRunHook()
+			})
 
 			on('file:preprocessor', bundler)
 			await addCucumberPreprocessorPlugin(on, config)
