@@ -9,7 +9,7 @@ report.generate({
 		device: 'local host machine',
 		platform: {
 			name: 'Windows',
-			version: '10'
+			version: '11'
 		}
 	}
 })

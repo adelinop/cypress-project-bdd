@@ -4,7 +4,6 @@
 import HomePage from './applications/homePage'
 import AbPage from './applications/abPage'
 import AddRemoveElementsPage from './applications/addRemoveElementsPage'
-import BasicAuthPage from './applications/basicAuthPage'
 import BrokenImagesPage from './applications/brokenImagesPage'
 import ContextMenuPage from './applications/contextMenuPage'
 import DragAndDropPage from './applications/dragAndDropPage'
@@ -24,7 +23,6 @@ class Application {
 		this.homePage = new HomePage()
 		this.abPage = new AbPage()
 		this.addRemoveElementsPage = new AddRemoveElementsPage()
-		this.basicAuthPage = new BasicAuthPage()
 		this.brokenImagesPage = new BrokenImagesPage()
 		this.contextMenuPage = new ContextMenuPage()
 		this.dragAndDropPage = new DragAndDropPage()
