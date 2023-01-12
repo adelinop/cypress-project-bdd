@@ -93,7 +93,6 @@
 	"env": {
 		"browser": true,
 		"commonjs": true,
-		"mocha": true,
 		"cypress/globals": true,
 		"es6": true
 	},

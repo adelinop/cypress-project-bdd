@@ -8,7 +8,10 @@ class AddRemoveElementsPage extends BasePage {
 		this.clickWait(selectors.buttonAddElement)
 	}
 	validateButtonIsVisible() {
-		cy.get(selectors.buttonsDelete).should('be.visible').click()
+		cy.get(selectors.buttonsDelete).should('be.visible')
+	}
+	deleteElement() {
+		cy.get(selectors.buttonsDelete).click()
 	}
 	validateButtonIsNotVisible() {
 		cy.get(selectors.buttonsDelete).should('not.exist')

@@ -5,10 +5,8 @@ const selectors = {
 }
 
 class HomePage extends BasePage {
-	accessABVariation() {
-		cy.fixture('env').then(dataEnv => {
-			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.AB)
-		})
+	accessMenuOption(option) {
+		this.accessMenuByText(selectors.menuLinks, option)
 	}
 	accessRemoveElementsPage() {
 		cy.fixture('env').then(dataEnv => {
@@ -23,6 +21,11 @@ class HomePage extends BasePage {
 	accessContextMenuPage() {
 		cy.fixture('env').then(dataEnv => {
 			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.ContextMenu)
+		})
+	}
+	accessDragAndDropPage() {
+		cy.fixture('env').then(dataEnv => {
+			this.accessMenuByText(selectors.menuLinks, dataEnv.menus.DragAndDrop)
 		})
 	}
 }

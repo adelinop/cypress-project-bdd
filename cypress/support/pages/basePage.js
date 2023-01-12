@@ -32,5 +32,8 @@ class BasePage {
 			cy.visit(data.auth.user + ':' + data.auth.password + '@' + data.baseUrl + '/' + data.menus.BasicAuth)
 		})
 	}
+	validaTitlePageLoad(text) {
+		cy.get('h3').should('be.visible').contains(text)
+	}
 }
 export default BasePage

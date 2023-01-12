@@ -14,14 +14,12 @@ jobs:
         with:
           name: index
           path: reports
-          retention-days: 30 
+          retention-days: 30
       - name: Slack Notifications
         uses: rtCamp/action-slack-notify@v2
-        env: 
+        env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: teemo
           SLACK_TITLE: Execution Report
-          SLACK_MESSAGE: "Te deixei um presentinho"
+          SLACK_MESSAGE: 'Te deixei um presentinho'
           SLACK_COLOR: ${{ job.status }}
-       
-       
