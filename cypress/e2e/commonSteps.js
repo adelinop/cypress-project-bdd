@@ -4,7 +4,7 @@ const applications = new Applications()
 export default class CommonSteps {}
 
 Given('I access the system', () => {
-	cy.accessUrl()
+	cy.visit('')
 })
 When('I access option {string}', option => {
 	applications.homePage.accessMenuOption(option)
