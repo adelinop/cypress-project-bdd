@@ -70,7 +70,7 @@ Just type:
 This project has eslint and prettier configured to mantain the code pattern 
 
 > ```bash
-> #Run this command for formatt all project with eslint and prettier rules 
+> # Run this command for formatt all project with eslint and prettier rules 
 > npm run format
 > ```
 
